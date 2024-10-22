@@ -1,0 +1,11 @@
+insert into test_func values(3,'77');
+insert into test_func values(4,'67.123');
+insert into test_func values(5,'123.123');
+insert into test_func values(6,'99');
+insert into test_func values(7,'99.456');
+insert into test_func values(8,'128');
+insert into test_func values(9,'123.777');
+insert into test_func values(10,'101.44');
+select * from test_func;
+select * from test_func where mod(id,2)=1;
+select id, round(num/2,2) from test_func where mod(id,2)=0;
